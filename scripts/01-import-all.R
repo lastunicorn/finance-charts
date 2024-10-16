@@ -70,4 +70,11 @@ all <- dates |>
   left_join(xtb, by = join_by(date)) |> 
   rename(xtb_amount = amount) |> 
   left_join(bonds, by = join_by(date)) |> 
-  rename(bonds_amount = amount)
+  rename(bonds_amount = amount) |> 
+  rowwise() |> 
+  mutate(
+    total_amount = sum(bcr_amount, ing_amount, brd_amount, bt_amount,
+                       revolut_amount, cash_amount, gold_amount, teletrade_amount,
+                       quanloop_amount, mintos_amount, peerberry_amount, xtb_amount,
+                       bonds_amount, na.rm = TRUE)
+  )
