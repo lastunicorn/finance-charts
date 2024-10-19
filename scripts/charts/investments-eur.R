@@ -89,7 +89,7 @@ all |>
   labs(
     title = "Investments (EUR) - ever",
     x = "Date",
-    y = "Amount"
+    y = "Amount (€)"
   )
 
 save_plot("investments-eur.png", width = 60, height = 10)

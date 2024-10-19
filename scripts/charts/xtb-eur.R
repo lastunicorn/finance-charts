@@ -17,7 +17,7 @@ xtb |>
   labs(
     title = "XTB (EUR) - ever",
     x = "Date",
-    y = "Amount"
+    y = "Amount (€)"
   )
 
 save_plot("xtb-eur.png", width = 30, height = 10)

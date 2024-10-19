@@ -17,7 +17,7 @@ mintos |>
   labs(
     title = "Mintos (EUR) - ever",
     x = "Date",
-    y = "Amount"
+    y = "Amount (€)"
   )
 
 save_plot("mintos-eur.png", width = 30, height = 10)

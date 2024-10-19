@@ -17,7 +17,7 @@ peerberry |>
   labs(
     title = "PeerBerry (EUR) - ever",
     x = "Date",
-    y = "Amount"
+    y = "Amount (€)"
   )
 
 save_plot("peerberry-eur.png", width = 30, height = 10)

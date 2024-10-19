@@ -16,7 +16,7 @@ all |>
   labs(
     title = "All money (RON) - ever",
     x = "Date",
-    y = "Amount"
+    y = "Amount (lei)"
   )
 
 save_plot("all-ron.png", width = 60, height = 10)
